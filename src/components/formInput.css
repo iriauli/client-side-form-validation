@@ -20,12 +20,12 @@ label {
 span {
   font-size: 12px;
   padding-left: 3px;
-  color: #ce2029;
+  color: #cc0000;
   display: none;
 }
 
 input:invalid[focused="true"] {
-  border: 1px solid #ce2029;
+  border: 1px solid #cc0000;
 }
 
 input:invalid[focused="true"] ~ span {

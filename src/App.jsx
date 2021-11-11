@@ -6,7 +6,6 @@ const App = () => {
   const [values, setValues] = useState({
     username: "",
     email: "",
-    birthday: "",
     password: "",
     confirmPassword: "",
   });
@@ -34,13 +33,6 @@ const App = () => {
     },
     {
       id: 3,
-      name: "birthday",
-      type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
-    },
-    {
-      id: 4,
       name: "password",
       type: "password",
       placeholder: "Password",
@@ -52,7 +44,7 @@ const App = () => {
       required: true,
     },
     {
-      id: 5,
+      id: 4,
       name: "confirmPassword",
       type: "password",
       placeholder: "Confirm Password",
@@ -73,9 +65,10 @@ const App = () => {
   console.log(values);
   return (
     <div className="app">
-      <h2 data-text="Validation">Validation</h2>
+      <header>
+      <h2 data-text="Register">Register</h2>
+      </header>
       <form onSubmit={handleSubmit}>
-        <h1>Register</h1>
         {inputs.map((input) => (
           <FormInput
             key={input.id}
